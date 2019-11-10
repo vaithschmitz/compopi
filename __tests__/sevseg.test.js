@@ -1,6 +1,7 @@
 const {SevenSegment} = require('../components/SevenSegment')
 
-describe('Creating new 7s instance', () => {
+describe('7s - Creating new instance', () => {
+    let sevSeg = new SevenSegment([1,2,3,4], [6,7,8,9,10,11,12])
     it('throws error if not enough segment pins', () => {
         expect(()=>{
             new SevenSegment([1,2,3,4], [6,7,8,9,10,11])
@@ -14,8 +15,12 @@ describe('Creating new 7s instance', () => {
     });
 
     it('instances correctly', () => {
-        let sevseg = new SevenSegment([1,2,3,4], [6,7,8,9,10,11,12])
-        expect(sevseg.digitPins).toEqual([1,2,3,4])
-        expect(sevseg.segmentPins).toEqual([6,7,8,9,10,11,12])
+        expect(sevSeg.digitPinsNums).toEqual([1,2,3,4])
+        expect(sevSeg.segmentPinsNums).toEqual([6,7,8,9,10,11,12])
+    })
+});
+
+describe('7s - Assigning pins', () =>{
+    it('digit pins are assigned to Gpio objects', () => {
     })
 });
