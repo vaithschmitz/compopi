@@ -1,0 +1,20 @@
+{
+  "name": "compopi",
+  "version": "0.0.1",
+  "description": "Standard component interface library for Raspberry Pi",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "raspberry",
+    "node",
+    "hardware",
+    "javascript"
+  ],
+  "author": "vaithschmitz@googlemail.com",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^24.9.0"
+  }
+}
