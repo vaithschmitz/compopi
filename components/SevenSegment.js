@@ -1,10 +1,9 @@
 class SevenSegment{
-    constructor(digitPins, segmentPins){
-        
+    constructor(digitPins, segmentPins){     
         if(!digitPins || !segmentPins){
             throw('please add BOTH, digit output pins AND 7 segment output pins')
         }
-
+        this.digitPins = digitPins
         if(segmentPins.length === 7){
             this.segmentPins = segmentPins
         }
@@ -14,7 +13,5 @@ class SevenSegment{
     }
 
 }
-
-
 
 module.exports.SevenSegment = SevenSegment
